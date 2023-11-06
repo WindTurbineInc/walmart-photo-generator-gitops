@@ -1,0 +1,15 @@
+app:
+  name: walmart-photo-generator-app
+  namespace: walmart
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/walmart-photo-generator
+  org: WindTurbineInc
+  name: walmart-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: walmart/photo-generator-app
+  tag: latest
